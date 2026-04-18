@@ -104,4 +104,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
-Special thanks to Ye Kyaw Thu (Waseda University, NECTEC) for the original algorithm implementations.
+Special thanks to Ye Kyaw Thu (Waseda University, NECTEC) and Phyo Thu Htet(The founder of Símbolo) for the original algorithm implementations.
