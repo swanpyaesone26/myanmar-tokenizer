@@ -39,6 +39,7 @@ def syllable(line, delimiter=' '):
         
     Example:
         >>> syllable("မြန်မာစာ", delimiter='|')
-        'မ|ြ|န|်|မ|ာ|စ|ာ'
+        'မြန်|မာ|စာ'
     """
-    return BreakPattern.sub(delimiter + r"\1", line)
+    result = BreakPattern.sub(delimiter + r"\1", line)
+    return result.lstrip(delimiter)  # Remove leading delimiter

@@ -27,7 +27,7 @@ text = "မြန်မာစာ"
 
 # Syllable segmentation
 print(segment_syllables(text))
-# Output: မ ြ န ် မ ာ စ ာ
+# Output: မြန် မာ စာ
 
 # Word segmentation
 print(segment_words(text))
@@ -47,11 +47,11 @@ text = "မြန်မာစာ"
 
 # Default: space delimiter
 result = segment_syllables(text)
-# 'မ ြ န ် မ ာ စ ာ'
+# 'မြန် မာ စာ'
 
 # Custom delimiter
 result = segment_syllables(text, delimiter='|')
-# 'မ|ြ|န|်|မ|ာ|စ|ာ'
+# 'မြန်|မာ|စာ'
 ```
 
 **Use case**: Phonetic analysis, character-level NLP tasks, text preprocessing.
