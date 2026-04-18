@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myanmar-tokenizer"
+version = "1.0.0"
+description = "Syllable and word segmentation for Myanmar (Burmese) text"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Swan Pyae Sone", email = "joyboyop69@gmail.com"},
+]
+keywords = ["myanmar", "burmese", "tokenizer", "segmentation", "nlp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Burmese",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/swanpyaesone26/myanmar-tokenizer"
+Documentation = "https://github.com/swanpyaesone26/myanmar-tokenizer#readme"
+Repository = "https://github.com/swanpyaesone26/myanmar-tokenizer.git"
+Issues = "https://github.com/swanpyaesone26/myanmar-tokenizer/issues"
+
+[tool.setuptools]
+packages = ["myanmar_tokenizer"]
+
+[tool.setuptools.package-data]
+myanmar_tokenizer = ["data/*.bin"]
